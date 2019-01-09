@@ -49,7 +49,8 @@ jQuery(function($){
 
 	jQuery(window).bind('scroll', function () {
     if ($(window).scrollTop() > 700) {
-        $('.main-navbar').addClass('navbar-fixed-top');
+		$('.main-navbar').addClass('navbar-fixed-top');
+		$('.logo').addClass('logo-in-fixed-menu');
         $('.logo').addClass('logo-compressed');
         $('.main-nav li a').addClass('less-padding');
         $('.search-area').css('height','44');
@@ -58,7 +59,8 @@ jQuery(function($){
         
 	    } else {
 	        $('.main-navbar').removeClass('navbar-fixed-top');
-	        $('.logo').removeClass('logo-compressed');
+			$('.logo').removeClass('logo-compressed');
+			$('.logo').removeClass('logo-in-fixed-menu');
 	        $('.main-nav li a').removeClass('less-padding');
 	        $('.search-area').css('height','60');
 	        $('.search-area input[type="text"]').css('top','11%');
